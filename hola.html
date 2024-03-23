@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryTimesA&D - Podcast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f; /* Fondo oscuro */
+            color: #fff; /* Texto blanco */
+        }
+        header {
+            position: relative; /* Posicionamiento relativo para alinear las pestañas */
+            overflow: hidden; /* Oculta las partes sobrantes */
+        }
+        .banner {
+            width: 1%;
+            display: block;
+            position: absolute; /* Posicionamiento absoluto para superponer el banner */
+            top: 1; /* Alineación con la parte superior */
+            left: 1; /* Alineación con la parte izquierda */
+            z-index: 1; /* Colocar el banner detrás del contenido */
+        }
+        nav {
+            position: absolute;
+            bottom: 20px; /* Alineación con la parte inferior */
+            right: 20px; /* Alineación con la parte derecha */
+        }
+        ul {
+            list-style: none; /* Quita los puntos de la lista */
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: inline-block;
+            margin-left: 10px; /* Espacio entre las pestañas */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 20px; /* Bordes redondeados */
+            background-color: #ff8f66; /* Naranja claro */
+        }
+        .logo {
+            width: 150px; /* Tamaño del logo */
+            display: inline-block; /* Para que ocupe su propio espacio */
+            margin-right: 20px; /* Espacio entre el logo y las pestañas */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333; /* Fondo oscuro */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra suave */
+        }
+        h1, h2 {
+            color: #fff; /* Texto blanco */
+        }
+        p {
+            color: #ccc; /* Texto gris claro */
+            line-height: 1.6;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333; /* Fondo oscuro */
+                color: #fff; /* Texto blanco */
+            }
+            header {
+                background-color: #e64a19; /* Naranja oscuro */
+            }
+            .container {
+                background-color: #1f1f1f; /* Fondo oscuro */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            }
+            p {
+                color: #ccc; /* Texto gris claro */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="D:\baner.jpg" alt="Banner del podcast StoryTimesA&D" class="banner">
+        <img src="D:\logo.jpg" alt="Logotipo del podcast StoryTimesA&D" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Donaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Último episodio</h2>
+        <p>Descripción del último episodio...</p>
+        <audio controls>
+            <source src="https://stream.zeno.fm/ua7ksczvsmftv" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <!-- Aquí puedes agregar más contenido, como episodios anteriores, información sobre el podcast, etc. -->
+    </div>
+</body>
+</html>
